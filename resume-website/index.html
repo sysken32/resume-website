@@ -3,25 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/style.css">
-    <title>Elkan D'Silva Resume Website</title>
   </head>
   <body>
-    <div class="flex-container">
-      <div class="hello-user">
-        <p>Hi, I'm Elkan. I'm a front-end developer. Make this a typing effect</p>
-        <button class="my-projects">My Projects</button>
-      </div>
-      <div class="title-bar">
+    <div class="flex-container flex flex-col justify-center  h-full w-full">
+      <section class="front-page">
+        <div class="hello-user h-screen flex flex-col justify-center items-center">
+          <p>Hi, I'm Elkan. I'm a front-end developer.</p>
+          <button>My Projects</button>
+        </div>
+      </section>
+      <div class="title-bar flex flex-row-reverse bg-[#202020] items-center h-9 w-full">
         <nav class="contact">contact</nav>
-        <nav class="projects">projects</nav>
-        <nav class="about">about</nav>
-        <nav class="home">home</nav>
+        <nav class="projects mr-5">projects</nav>
+        <nav class="about mr-5">about</nav>
+        <nav class="home mr-5">home</nav>
       </div>
-      <div class="about-section">
-        
-      </div>
-
+      <section class="about-page">
+        <h1 class="about-title flex text-2xl justify-center mb-10">ABOUT</h1>
+        <div class="about-section flex flex-row justify-center ">
+          <div class="about-box flex flex-row">
+            <div class="profile-box flex flex-col w-[340px] ">
+              <img src="src/images/undraw_coding_re_iv62.svg" alt="programmer_icon" class="h-[10em]">
+              <div class="about-text">I am a front-end developer with a deep passion for JavaScript, Web Development, Creative Coding, and fully committed to a journey of life-long learning.
+                The unique combination of creativity and logic never ceases to excite me and further my passion for development. When I'm not at my computer coding, I like to design clothing in order to keep
+                my mind active.
+              </div>            
+            </div>
+            <div class="icon-box flex flex-row">
+              <div class="icon-box-1 h-[550px]">
+                <div class="skills-item-javascript flex flex-col justify-center items-center ">
+                  <img src="src/images/project_photo_files/js.svg" alt="JavaScript" class="h-[4em]">
+                  <p>JAVASCRIPT</p>
+                </div>
+                <div class="skills-item-html flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/html-1.svg" alt="html" class="h-[4em]">
+                  <p>HTML</p>
+                </div>
+                <div class="skills-item-css flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/css-3.svg" alt="css" class="h-[4em]">
+                  <p>CSS</p>
+                </div>
+              </div>
+              <div class="icon-box-2 h-[550px]">
+                <div class="skills-item-git flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/git-icon.svg" alt="git" class="h-[4em]">
+                  <p>GIT</p>
+                </div>
+                <div class="skills-item-node flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/590px-Node.js_logo.svg.png" alt="node" class="h-[4em]">
+                  <p>NODEJS</p>
+                </div>
+                <div class="skills-item-react flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/React-icon.svg.png" alt="react" class="h-[4em]">
+                  <p>REACT</p>
+                </div>
+              </div>
+              <div class="icon-box-3 h-[550px]">
+                <div class="skills-item-typescript flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/Typescript_logo_2020.svg.png" alt="typescript" class="h-[4em]">
+                  <p>TYPESCRIPT</p>
+                </div>
+                <div class="skills-item-figma flex flex-col justify-center items-center pt-10">
+                  <img src="src/images/project_photo_files/figma-5.svg" alt="figma" class="h-[1.5em]">
+                  <p>FIGMA</p>
+                </div>
+                <div class="skills-item-tailwindcss flex flex-col justify-center items-center">
+                  <img src="src/images/project_photo_files/Tailwind_CSS_Logo.svg.png" alt="tailwindcss" class="h-[4em]">
+                  <p>TAILWINDCSS</p>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects-page mb-10">
+        <h1 class="projects-title flex text-2xl justify-center">PROJECTS</h1>
+        <div class="project-section-box flex flex-row justify-center ">
+          <div class="project-icon-box flex flex-col pr-24">
+            <div class="project-one">THIS IS A PROJECT BOX</div>
+            <div class="project-two">THIS IS A PROJECT BOX</div>
+            <div class="project-three">THIS IS A PROJECT BOX</div>
+          </div>
+          <div class="project-text-box flex flex-col">
+            <div class="project-one-text">THIS IS A PROJECT TEXT BOX</div>
+            <div class="project-two-text">THIS IS A PROJECT TEXT BOX</div>
+            <div class="project-three-text">THIS IS A PROJECT TEXT BOX</div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-page flex justify-center">
+        <div class="contact-page-box flex flex-col w-[19em]">
+          <p class="contact-text">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible</p>
+          <input type="text" placeholder="name" class="contact-form-name">
+          <input type="email" placeholder="email" class="contact-form-email">
+          <textarea name="message" placeholder="message" cols="30" rows="10" class="contact-form-message"></textarea>
+          <button class="contact-submitBtn">submit</button>
+        </div>
+      </section>
     </div>
     <script type="module" src="/src/main.ts"></script>
   </body>

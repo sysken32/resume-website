@@ -6,17 +6,17 @@
   </head>
   <body>
     <div class="flex-container flex flex-col justify-center  h-full w-full">
-      <section class="front-page">
+      <section class="home-page">
         <div class="hello-user h-screen flex flex-col justify-center items-center">
-          <p>Hi, I'm Elkan. I'm a front-end developer.</p>
-          <button>My Projects</button>
+          <p>Hi, I'm Elkan. I'm a front-end developer. Add third project -> position things properly -> add styling effects -> contact form working -> build unique looking background -> final touches </p>
+          <button class="myProjects ease-in duration-300">My Projects</button>
         </div>
       </section>
-      <div class="title-bar flex flex-row-reverse bg-[#202020] items-center h-9 w-full">
-        <nav class="contact">contact</nav>
-        <nav class="projects mr-5">projects</nav>
-        <nav class="about mr-5">about</nav>
-        <nav class="home mr-5">home</nav>
+      <div class="title-bar sticky top-0 flex flex-row-reverse bg-[#202020] items-center h-9 w-full">
+        <nav class="contact mr-5 hover:text-[#646cff] transition-colors duration-300">contact</nav>
+        <nav class="projects mr-5 hover:text-[#646cff] transition-colors duration-300">projects</nav>
+        <nav class="about mr-5 hover:text-[#646cff] transition-colors duration-300">about</nav>
+        <nav class="home mr-5 hover:text-[#646cff] transition-colors duration-300">home</nav>
       </div>
       <section class="about-page">
         <h1 class="about-title flex text-2xl justify-center mb-10">ABOUT</h1>
@@ -31,36 +31,36 @@
             </div>
             <div class="icon-box flex flex-row">
               <div class="icon-box-1 h-[550px]">
-                <div class="skills-item-javascript flex flex-col justify-center items-center ">
-                  <img src="src/images/project_photo_files/js.svg" alt="JavaScript" class="h-[4em]">
+                <div class="skills-item-javascript flex flex-col justify-center items-center px-3 pt-1">
+                  <img src="src/images/project_photo_files/js.svg" alt="JavaScript" class="h-[3em]">
                   <p>JAVASCRIPT</p>
                 </div>
                 <div class="skills-item-html flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/html-1.svg" alt="html" class="h-[4em]">
+                  <img src="src/images/project_photo_files/html-1.svg" alt="html" class="h-[3em]">
                   <p>HTML</p>
                 </div>
                 <div class="skills-item-css flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/css-3.svg" alt="css" class="h-[4em]">
+                  <img src="src/images/project_photo_files/css-3.svg" alt="css" class="h-[3em]">
                   <p>CSS</p>
                 </div>
               </div>
-              <div class="icon-box-2 h-[550px]">
+              <div class="icon-box-2 pt-7 h-[550px]">
                 <div class="skills-item-git flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/git-icon.svg" alt="git" class="h-[4em]">
+                  <img src="src/images/project_photo_files/git-icon.svg" alt="git" class="h-[3em]">
                   <p>GIT</p>
                 </div>
                 <div class="skills-item-node flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/590px-Node.js_logo.svg.png" alt="node" class="h-[4em]">
+                  <img src="src/images/project_photo_files/590px-Node.js_logo.svg.png" alt="node" class="h-[3em]">
                   <p>NODEJS</p>
                 </div>
                 <div class="skills-item-react flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/React-icon.svg.png" alt="react" class="h-[4em]">
+                  <img src="src/images/project_photo_files/React-icon.svg.png" alt="react" class="h-[3em]">
                   <p>REACT</p>
                 </div>
               </div>
               <div class="icon-box-3 h-[550px]">
                 <div class="skills-item-typescript flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/Typescript_logo_2020.svg.png" alt="typescript" class="h-[4em]">
+                  <img src="src/images/project_photo_files/Typescript_logo_2020.svg.png" alt="typescript" class="h-[3em]">
                   <p>TYPESCRIPT</p>
                 </div>
                 <div class="skills-item-figma flex flex-col justify-center items-center pt-10">
@@ -68,7 +68,7 @@
                   <p>FIGMA</p>
                 </div>
                 <div class="skills-item-tailwindcss flex flex-col justify-center items-center">
-                  <img src="src/images/project_photo_files/Tailwind_CSS_Logo.svg.png" alt="tailwindcss" class="h-[4em]">
+                  <img src="src/images/project_photo_files/Tailwind_CSS_Logo.svg.png" alt="tailwindcss" class="h-[3em]">
                   <p>TAILWINDCSS</p>
                 </div>
               </div>
@@ -79,25 +79,42 @@
       </section>
       <section class="projects-page mb-10">
         <h1 class="projects-title flex text-2xl justify-center">PROJECTS</h1>
-        <div class="project-section-box flex flex-row justify-center ">
-          <div class="project-icon-box flex flex-col pr-24">
-            <div class="project-one">THIS IS A PROJECT BOX</div>
-            <div class="project-two">THIS IS A PROJECT BOX</div>
-            <div class="project-three">THIS IS A PROJECT BOX</div>
+        <div class="project-section-box flex flex-col justify-center ">
+          <div class="project-box-one flex flex-row pl-[3em]">
+            <div class="project-one flex flex-row">
+              <img src="src/images/todo-list-sc.png" alt="todo-list project image" class="border-r-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[20em]">
+              <div class="project-one-text pl-[20px]">
+                <h1 class="text-3xl">Productivity To-Do List App</h1>
+                Create a personalized checklist to stay organized on any project.
+                Built with TypeScript - Vite - HTML5 - CSS3
+                <br>
+                Live Demo // make this a link
+              </div>
+            </div>
           </div>
-          <div class="project-text-box flex flex-col">
-            <div class="project-one-text">THIS IS A PROJECT TEXT BOX</div>
-            <div class="project-two-text">THIS IS A PROJECT TEXT BOX</div>
-            <div class="project-three-text">THIS IS A PROJECT TEXT BOX</div>
+          <div class="project-box-two">
+            <div class="project-two flex flex-row pl-[37em]">
+              <div class="projec-two-text w-[740px] text-right pr-[20px]">
+                <h1 class="text-3xl text-right">Pixel Drawing App</h1>
+                A intuitive pixel drawing app featuring full RGB color values, a current color display, eraser, reset board function, and resizeable board options.
+                Built with JavaScript - HTML5 - CSS3
+                <br>
+                <a href="https://sysken32.github.io/Etch-A-Sketch/">Live Demo</a>  
+              </div>
+              <img src="src/images/project_photo_files/eas.png" alt="etch-a-sketch project image" class="border-l-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[20em]">
+            </div>
           </div>
         </div>
       </section>
       <section class="contact-page flex justify-center">
         <div class="contact-page-box flex flex-col w-[19em]">
-          <p class="contact-text">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible</p>
-          <input type="text" placeholder="name" class="contact-form-name">
-          <input type="email" placeholder="email" class="contact-form-email">
-          <textarea name="message" placeholder="message" cols="30" rows="10" class="contact-form-message"></textarea>
+          <p class="contact-text">Have a question or want to work together? Leave your details and I'll get back to you as soon as possible.
+
+            -- temporary section -- replace this with proper contact form.
+          </p>
+          <input type="text" placeholder="name" class="contact-form-name border-2 mb-0.5">
+          <input type="email" placeholder="email" class="contact-form-email border-2 mb-0.5">
+          <textarea name="message" placeholder="message" cols="30" rows="10" class="contact-form-message border-2 mb-0.5"></textarea>
           <button class="contact-submitBtn">submit</button>
         </div>
       </section>

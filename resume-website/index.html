@@ -8,28 +8,28 @@
     <div class="flex-container flex flex-col justify-center  h-full w-full">
       <section class="home-page">
         <div class="hello-user h-screen flex flex-col justify-center items-center">
-          <p>Hi, I'm Elkan. I'm a front-end developer. Add third project -> position things properly -> add styling effects -> contact form working -> build unique looking background -> final touches </p>
+          <p>Hi, I'm Elkan. I'm a front-end developer. contact form working -> add styling effects -> build unique looking background -> final touches </p>
           <button class="myProjects ease-in duration-300">My Projects</button>
         </div>
       </section>
       <div class="title-bar sticky top-0 flex flex-row-reverse bg-[#202020] items-center h-9 w-full">
-        <nav class="contact mr-5 hover:text-[#646cff] transition-colors duration-300">contact</nav>
-        <nav class="projects mr-5 hover:text-[#646cff] transition-colors duration-300">projects</nav>
-        <nav class="about mr-5 hover:text-[#646cff] transition-colors duration-300">about</nav>
-        <nav class="home mr-5 hover:text-[#646cff] transition-colors duration-300">home</nav>
+        <nav class="contact mr-5 hover:text-[#646cff] transition-colors duration-300 cursor-pointer">contact</nav>
+        <nav class="projects mr-5 hover:text-[#646cff] transition-colors duration-300 cursor-pointer">projects</nav>
+        <nav class="about mr-5 hover:text-[#646cff] transition-colors duration-300 cursor-pointer">about</nav>
+        <nav class="home mr-5 hover:text-[#646cff] transition-colors duration-300 cursor-pointer">home</nav>
       </div>
       <section class="about-page">
         <h1 class="about-title flex text-2xl justify-center mb-10">ABOUT</h1>
         <div class="about-section flex flex-row justify-center ">
           <div class="about-box flex flex-row">
             <div class="profile-box flex flex-col w-[340px] ">
-              <img src="src/images/undraw_coding_re_iv62.svg" alt="programmer_icon" class="h-[10em]">
+              <img src="src/images/undraw_coding_re_iv62.svg" alt="programmer_icon" class="h-[13em]">
               <div class="about-text">I am a front-end developer with a deep passion for JavaScript, Web Development, Creative Coding, and fully committed to a journey of life-long learning.
                 The unique combination of creativity and logic never ceases to excite me and further my passion for development. When I'm not at my computer coding, I like to design clothing in order to keep
                 my mind active.
               </div>            
             </div>
-            <div class="icon-box flex flex-row">
+            <div class="icon-box flex flex-row pl-[300px]">
               <div class="icon-box-1 h-[550px]">
                 <div class="skills-item-javascript flex flex-col justify-center items-center px-3 pt-1">
                   <img src="src/images/project_photo_files/js.svg" alt="JavaScript" class="h-[3em]">
@@ -82,7 +82,7 @@
         <div class="project-section-box flex flex-col justify-center ">
           <div class="project-box-one flex flex-row pl-[3em]">
             <div class="project-one flex flex-row">
-              <img src="src/images/todo-list-sc.png" alt="todo-list project image" class="border-r-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[20em]">
+              <img src="src/images/todo-list-sc.png" alt="todo-list project image" class="border-r-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[35em]">
               <div class="project-one-text pl-[20px]">
                 <h1 class="text-3xl">Productivity To-Do List App</h1>
                 Create a personalized checklist to stay organized on any project.
@@ -92,16 +92,28 @@
               </div>
             </div>
           </div>
-          <div class="project-box-two">
-            <div class="project-two flex flex-row pl-[37em]">
-              <div class="projec-two-text w-[740px] text-right pr-[20px]">
+          <div class="project-box-two pt-[10em]">
+            <div class="project-two flex flex-row-reverse pr-[20px]">
+              <img src="src/images/project_photo_files/eas.png" alt="etch-a-sketch project image" class="border-l-[5em] border-b-[2em] border-t-[2em] border-[#474db8] h-[25em]  hover:h-[24em]">
+              <div class="project-two-text w-[740px] text-right pr-[20px]">
                 <h1 class="text-3xl text-right">Pixel Drawing App</h1>
                 A intuitive pixel drawing app featuring full RGB color values, a current color display, eraser, reset board function, and resizeable board options.
                 Built with JavaScript - HTML5 - CSS3
                 <br>
                 <a href="https://sysken32.github.io/Etch-A-Sketch/">Live Demo</a>  
               </div>
-              <img src="src/images/project_photo_files/eas.png" alt="etch-a-sketch project image" class="border-l-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[20em]">
+            </div>
+          </div>
+          <div class="project-box-three pt-[10em]">
+            <div class="project-two flex flex-row pl-[3em]">
+              <img src="src/images/rps.png" alt="rock-paper-scissors project" class="border-r-[2em] border-b-[2em] border-t-[2em] border-[#474db8] h-[35em] ">
+              <div class="project-three-text text-left w-[740px] pl-[20px]">
+                <h1 class="text-3xl">Rock-Paper-Scissors App</h1>
+                A simple computer turn based Rock-Paper-Scissors game featuring updating scoreboard, notifying computer and player moves, and a final winner. 
+                Built with JavaScript - HTML5 - CSS3
+                <br>
+                <a href="https://sysken32.github.io/Rock-Paper-Scissors/">Live Demo</a>
+              </div>
             </div>
           </div>
         </div>
@@ -112,10 +124,14 @@
 
             -- temporary section -- replace this with proper contact form.
           </p>
-          <input type="text" placeholder="name" class="contact-form-name border-2 mb-0.5">
-          <input type="email" placeholder="email" class="contact-form-email border-2 mb-0.5">
-          <textarea name="message" placeholder="message" cols="30" rows="10" class="contact-form-message border-2 mb-0.5"></textarea>
-          <button class="contact-submitBtn">submit</button>
+
+          <form method="post" action="send-email.php" class="flex flex-col">
+            <input type="text" name="name" id="name" placeholder="name" required>
+            <input type="email" name="email" id="email" placeholder="email" required>
+            <input type="subject" name="subject" id="subject" placeholder="subject" required>
+            <textarea name="message" id="message" placeholder="message" cols="40" rows="10"></textarea>
+            <button class="submit-btn">Submit</button>
+          </form>
         </div>
       </section>
     </div>
